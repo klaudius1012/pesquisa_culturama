@@ -33,6 +33,8 @@ form{
     background-color: white;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
+    
 }
 
 fieldset{
@@ -46,6 +48,7 @@ legend{
     font-size: 18px;
     padding: 0 5px;
 }
+
 
 input, select, textarea{
     width: 100%;
@@ -66,6 +69,10 @@ label{
     margin-bottom: 5px;
 }
 
+p{
+    margin-bottom: 5px;
+}
+
 input[type="radio"],
 input[type="checkbox"]{
     width: auto;
@@ -75,4 +82,32 @@ input[type="color"]{
     padding: 0;
     width: 30px;
     height: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"], 
+input[type="email"], 
+input[type="checkbox"]:invalid{
+    border-color: red;
+}
+
+select:invalid{
+    border-color: red;
+}
+
+button{
+    
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(165, 243, 233);
 }
